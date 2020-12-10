@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sdorica - Charle</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<img src="images/sdorica-logo.png" alt="sdorica logo" />
+		</header>
+		<div class="navbar__tabs-btn">
+			<button
+				class="navbar__tab-link btn-active"
+				onclick="openTab(event, 'overview')"
+			>
+				Overview
+			</button>
+			<button
+				class="navbar__tab-link btn-inactive"
+				onclick="openTab(event, 'stats')"
+			>
+				Stats
+			</button>
+			<button
+				class="navbar__tab-link btn-inactive"
+				onclick="openTab(event, 'gallery')"
+			>
+				Gallery
+			</button>
+		</div>
+		<hr />
+		<main>
+			<div id="overview" class="tab-item">
+				<div class="flex-row">
+					<div class="character__info">
+						<h2>Charle Ceres</h2>
+						<h3>
+							<span><strong>CV:</strong></span> Tachibana Shinnosuke
+						</h3>
+						<img src="images/info-divider.png" alt="info divider" />
+						<h4>
+							<span><strong>Birthday:</strong></span> 15th of Maple month
+						</h4>
+						<h4>
+							<span><strong>Height:</strong></span> 175cm
+						</h4>
+						<p>
+							Headmaster of the Rune Academy and Head of Applied Magic, whose
+							research focuses on improving the lives of common folk. Holds
+							strong ties with Morris, Aosta’s old mentor.Has a wonderful sense
+							of humor and is always seen with a smile, which earned him
+							popularity among the pupils of Rune Academy. Even so, he speaks
+							with a wisdom far beyond the years of his appearance.Is incapable
+							of living alone and knocks over things due to clumsiness, and
+							tends to forget eating once completely buried in research.
+						</p>
+					</div>
+					<div class="character__image">
+						<img src="images/CH_Charle.png" alt="charle portrait" />
+					</div>
+				</div>
+			</div>
+			<div id="stats" class="tab-item" style="display: none">
+				<div class="stats__base">
+					<table class="center">
+						<tbody>
+							<tr>
+								<th colspan="6">Base Stats</th>
+							</tr>
+							<tr>
+								<th>Attack (ATK)</th>
+								<td>
+									<span>66</span>
+								</td>
+								<th>Health (HP)</th>
+								<td>255</td>
+								<th>Revive (RV)</th>
+								<td>8</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p class="text-center">
+					<em
+						>Base stats taken at R Tier, Level 1. For more details, see
+						<span class="statistics__entry">Statistics</span></em
+					>
+				</p>
+				<div class="stats__skills">
+					<table class="center">
+						<tr>
+							<th colspan="6">Skills</th>
+						</tr>
+						<tr>
+							<th rowspan="2">
+								<img
+									src="images/Passive_Skill.png"
+									alt="charle's passive skill"
+								/>
+							</th>
+							<td>
+								<span><strong>[Passive]</strong></span> Celeb and Flow
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Upon cast 2-orb skill continuously, trigger 1-orb skill 2 times.
+							</td>
+						</tr>
+						<tr>
+							<th rowspan="2">
+								<img
+									src="images/Advisor_Skill.png"
+									alt="charle's advisor skill"
+								/>
+							</th>
+							<td>
+								<span><strong>[Advisor]</strong></span> Myth Buster Move
+							</td>
+						</tr>
+						<tr>
+							<td>2 orbs become black. [CD: 5]</td>
+						</tr>
+						<tr>
+							<th rowspan="2">
+								<img
+									src="images/1_Orb_Skill_Icon.png"
+									alt="charle's 1 orb skill"
+								/>
+							</th>
+							<td>
+								<span><strong>[1-orb Skill]</strong></span> Spell Blinder
+							</td>
+						</tr>
+						<tr>
+							<td>Attack (ATK x1) selected enemy. Clear 1 orb.</td>
+						</tr>
+						<tr>
+							<th rowspan="2">
+								<img
+									src="images/2_Orb_Skill_Icon.png"
+									alt="charle's 2 orb skill"
+								/>
+							</th>
+							<td>
+								<span><strong>[2-orb Skill]</strong></span> Spelling Be Done
+							</td>
+						</tr>
+						<tr>
+							<td>Attack (ATK x1) all enemies. Clear 2 orbs.</td>
+						</tr>
+						<tr>
+							<th rowspan="2">
+								<img
+									src="images/4_Square_Orb_Skill_Icon.png"
+									alt="charle's 4 orb skill"
+								/>
+							</th>
+							<td>
+								<span><strong>[4-orb Skill, square]</strong></span> Spellcheck
+								Mate
+							</td>
+						</tr>
+						<tr>
+							<td>Attack (ATK x2) all enemies. Clear 3 orbs.</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id="gallery" class="tab-item" style="display: none">
+				<div class="flex-col">
+					<img src="images/(Wisdom_Heathen)_Charle.png" alt="charle r tier" />
+					<em>(Tier R) Wisdom Heathen</em>
+					<img
+						src="images/(Passionate_Scholar)_Charle.png"
+						alt="charle sr tier"
+					/>
+					<em>(Tier SR) Passionate Scholar</em>
+					<img
+						src="images/(Sage_The_Alumni)_Charle.png"
+						alt="charle ssr tier"
+					/>
+					<em>(Tier SSR) Sage The Alumni</em>
+				</div>
+			</div>
+			<div id="statistics" class="modal">
+				<div class="modal__content">
+					<span class="modal__close">&times;</span>
+					<div class="statistics__content">
+						<p>
+							<span><strong>Statistics</strong></span> are attributes a
+							character can have, which greatly affect the character's
+							performance in battle.
+						</p>
+						<p>
+							Each character has 3 stats with unique base value and cannot be
+							changed, only strengthened through levelling up and exceeding:
+						</p>
+						<ul>
+							<li>
+								The <span><strong>Attack</strong></span> stat affects the
+								character's Damage output, Armor gain or Heal value.
+							</li>
+							<li>
+								The <span><strong>HP</strong></span> stat shows the amount of
+								damage the character can take before being downed.
+							</li>
+							<li>
+								The <span><strong>Resurrection</strong></span> stat shows the
+								number of resurrection orbs it takes to bring the character back
+								after being downed.
+							</li>
+						</ul>
+						<table class="center">
+							<tbody>
+								<tr>
+									<th>Formula</th>
+								</tr>
+								<tr>
+									<td class="text-center">
+										Statistics = B x 1.06<sup>L - 1</sup> x RM x EM
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Where:
+										<ul>
+											<li>B = Base stat of the character</li>
+											<li>L = Current level of the character</li>
+											<li>RM = Resonance multiplier</li>
+											<ul>
+												<li>Tier N: RM = 0.9</li>
+												<li>Tier R: RM = 1</li>
+												<li>Tier SR: RM = 1.2</li>
+												<li>Tier SSR: RM = 1.35</li>
+											</ul>
+											<li>EM = Extra exceed multiplier (see below)</li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p class="text-center">
+							<em>Statistics formula</em>
+						</p>
+						<table class="center">
+							<tbody>
+								<tr>
+									<th>Exceed Lv</th>
+									<th>Attack EM</th>
+									<th>HP EM</th>
+								</tr>
+								<tr>
+									<td>EL = +0 to + 5</td>
+									<td>EM = 1.02<sup>EL</sup></td>
+									<td rowspan="3">EM = 1.03<sup>EL</sup></td>
+								</tr>
+								<tr>
+									<td>EL = +6 to +10</td>
+									<td>EM = 1.02<sup>5</sup> x 1.025<sup>EL - 5</sup></td>
+								</tr>
+								<tr>
+									<td>EL = +11 to +15</td>
+									<td>
+										EM = 1.02<sup>5</sup> x 1.025<sup>5</sup> x 1.035<sup
+											>EL - 5</sup
+										>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p class="text-center">
+							<em>Extra exceed multiplier</em>
+						</p>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>&#169;2018 Rayark Inc. All Rights Reserved</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
